@@ -6,7 +6,7 @@ SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later
 This file is part of Network Pro.
 ========================================================================== -->
 
-[SPDX-License-Identifier](https://spdx.dev/learn/handling-license-info/): `CC-BY-4.0 OR GPL-3.0-or-later`
+<sup>[SPDX-License-Identifier](https://spdx.dev/learn/handling-license-info/): `CC-BY-4.0 OR GPL-3.0-or-later`</sup>
 
 # <a id="top">Hardening Brave Browser</a>
 
@@ -157,29 +157,4 @@ Special thanks to the original publisher of this material,
 Forked from
 [piyushkumar-prog/Hardening-Brave-Browser](https://github.com/piyushkumar-prog/Hardening-Brave-Browser).
 
----
-
-<span style="font-size: 12px; font-weight: bold; text-align: center;">
-
-[Home](https://netwk.pro) | [Terms of Use](https://netwk.pro/terms-of-use)  
-[Privacy Policy](https://netwk.pro/privacy-policy) | [Legal](https://netwk.pro/license)
-
-</span>
-
-&nbsp;
-
-<span style="font-size: 12px; text-align: center;">
-
-Copyright &copy; 2025  
-**[Network Pro Strategies](https://netwk.pro/)** (Network Pro&trade;)
-
-Network Pro&trade;, the shield logo, and the "Locking Down Networks&trade;"
-slogan are [trademarks](https://netwk.pro/license#trademark) of Network Pro
-Strategies.
-
-Licensed under **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** and
-the **[GNU GPL](https://spdx.org/licenses/GPL-3.0-or-later.html)**, as published
-by the [Free Software Foundation](https://fsf.org), either version 3 of the
-License, or (at your option) any later version.
-
-</span>
+<!-- cspell:ignore piyushkumar -->

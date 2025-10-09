@@ -6,9 +6,9 @@ SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later
 This file is part of Network Pro.
 ========================================================================== -->
 
-[SPDX-License-Identifier](https://spdx.dev/learn/handling-license-info/): `CC-BY-4.0 OR GPL-3.0-or-later`
+<sup>[SPDX-License-Identifier](https://spdx.dev/learn/handling-license-info/): `CC-BY-4.0 OR GPL-3.0-or-later`</sup>
 
-# <a id="top">Hardening-Brave-Browser</a>
+# <a id="top">Hardening Brave Browser</a>
 
 `1.` **Download Brave Browser** from [Brave](https://www.brave.com) or GitHub:  
  ✅ [brave/brave-browser](https://github.com/brave/brave-browser)
