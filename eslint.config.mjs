@@ -1,52 +1,57 @@
-// eslint.config.mjs
 /* ==========================================================================
+eslint.config.mjs
+
 SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later
 This file is part of Network Pro.
 ========================================================================== */
 
-import js from "@eslint/js";
-import eslintConfigPrettier from "eslint-config-prettier";
-import mocha from "eslint-plugin-mocha";
-import globals from "globals";
+import js from '@eslint/js';
+import eslintConfigPrettier from 'eslint-config-prettier';
+import globals from 'globals';
 
-const IGNORED_FILES = [
-  ".*", // Ignores all dotfiles (.prettierrc, .babelrc, etc.)
-  "**/*.xml", // Exclude non-JS files like bimi-svg-tiny-ps.xml
-  "**/.vscode/**",
-  "**/dist/**",
-  "**/node_modules/**",
-  "**/assets/license/**",
-  "**/babel.config.json",
-  "**/package.json",
-  "**/package-lock.json",
+const GLOBAL_IGNORES = [
+  '**/node_modules/**',
+  '**/dist/**',
+  '**/build/**',
+  '**/assets/license/**',
+  '**/.vscode/**',
+  '**/.venv/**',
+  '**/python-venv/**',
+  '**/__pycache__/**',
+  '**/*.json',
+  '**/*.jsonc',
+  '**/*.xml',
+  '**/package-lock.json',
+  '**/package.json',
+  '.*', // Ignore dotfiles
 ];
 
 const GLOBALS = {
   ...globals.browser,
-  ...globals.node, // Include Node.js globals
-  ...globals.mocha,
+  ...globals.node,
+  self: 'readonly',
+  location: 'readonly',
+  indexedDB: 'readonly',
 };
 
 const ESLINT_RULES = {
+  ...js.configs.recommended.rules,
   ...eslintConfigPrettier.rules,
-  "mocha/no-exclusive-tests": "error",
-  "mocha/no-skipped-tests": "warn",
-  "mocha/no-hooks-for-single-case": "warn",
-  "indent": "off", // Turn off the 'indent' rule
-  "quotes": "off", // Turn off the 'quotes' rule
-  "semi": "off", // Turn off the 'semi' rule
+  indent: 'off',
+  quotes: 'off',
+  semi: 'off',
 };
 
 export default [
-  js.configs.recommended,
   {
-    files: ["**/*.js", "**/*.mjs", "**/*.cjs"],
-    ignores: IGNORED_FILES,
-    plugins: { mocha },
+    ignores: GLOBAL_IGNORES,
+  },
+  {
+    files: ['**/*.js', '**/*.mjs', '**/*.cjs'],
     languageOptions: {
       globals: GLOBALS,
-      ecmaVersion: "latest", // Auto-upgrade ECMAScript version
-      sourceType: "module",
+      ecmaVersion: 'latest',
+      sourceType: 'module',
     },
     rules: ESLINT_RULES,
   },

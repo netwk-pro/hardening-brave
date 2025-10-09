@@ -1,6 +1,6 @@
 {
   "name": "hardening-brave",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "Changes to Brave's settings that will make Brave more privacy friendly.",
   "keywords": [
     "networking",
@@ -10,37 +10,48 @@
     "advisory",
     "consulting"
   ],
-  "homepage": "https://netwk.pro",
+  "homepage": "https://brave.netwk.pro",
   "bugs": {
-    "url": "https://github.com/NetEng-Pro/neteng-pro.github.io/issues"
+    "url": "https://github.com/netwk-pro/netwk-pro.github.io/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NetEng-Pro/hardening-brave.git"
+    "url": "git+https://github.com/netwk-pro/hardening-brave.git"
   },
   "license": "CC-BY-4.0 OR GPL-3.0-or-later",
   "author": "Scott Lopez",
   "type": "module",
-  "main": "README.md",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
-    "test": "mocha",
-    "lint": "npx eslint && prettier --check .",
-    "mdlint": "npx markdownlint-cli2 '**/*.md' '!node_modules/**'",
-    "fix": "npx eslint --fix && prettier --write .",
-    "clean": "rm -rf node_modules package-lock.json && npm install"
+    "dev": "mkdocs serve",
+    "start": "npm run dev",
+    "build": "mkdocs build",
+    "delete": "rm -rf build node_modules package-lock.json",
+    "clean": "npm run delete && npm cache clean --force && npm install",
+    "lint": "eslint --ext .mjs,.js,.cjs,.json,.jsonc --config eslint.config.mjs .",
+    "lint:fix": "eslint . --ext .mjs,.js,.json,.jsonc --fix",
+    "lint:md": "npx markdownlint-cli2 \"**/*.{md,markdown}\" \"#node_modules/**\" \"#build/**\" \"#python-venv/**\"",
+    "lint:css": "npx stylelint \"**/*.css\" --ignore-path .stylelintignore",
+    "format": "npx prettier . --check",
+    "format:fix": "npx prettier . --write",
+    "lint:all": "npm run lint && npm run lint:md && npm run lint:css && npm run format",
+    "checkout": "npm run lint:all",
+    "verify": "npm run checkout",
+    "upgrade": "npx npm-check-updates -u"
   },
   "devDependencies": {
-    "@eslint/js": "^9.21.0",
-    "chai": "^5.2.0",
-    "eslint": "^9.21.0",
-    "eslint-config-prettier": "^10.0.2",
-    "eslint-plugin-mocha": "^10.5.0",
-    "globals": "^16.0.0",
-    "markdownlint-cli2": "^0.17.2",
-    "mocha": "^11.1.0",
-    "prettier": "^3.5.2"
+    "@eslint/js": "^9.37.0",
+    "autoprefixer": "^10.4.21",
+    "browserslist": "^4.26.3",
+    "eslint": "^9.37.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^16.4.0",
+    "markdownlint": "^0.38.0",
+    "markdownlint-cli2": "^0.18.1",
+    "postcss": "^8.5.6",
+    "prettier": "^3.6.2",
+    "stylelint": "^16.25.0",
+    "stylelint-config-html": "^1.1.0",
+    "stylelint-config-recommended": "^17.0.0",
+    "stylelint-order": "^7.0.0"
   }
 }

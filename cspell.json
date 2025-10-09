@@ -1,0 +1,41 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": [
+    "Bitwarden",
+    "Ecosia",
+    "ffupdater",
+    "FOSS",
+    "Kagi",
+    "mkdocs",
+    "Mojeek",
+    "noopener",
+    "noreferrer",
+    "Picsart",
+    "pycache",
+    "Startpage",
+    "stylelintignore",
+    "Tobi",
+    "venv"
+  ],
+  "ignorePaths": [
+    ".gitignore",
+    ".gitattributes",
+    "src/sitemap.xml",
+    "src/robots.txt",
+    "**/build/**",
+    "**/.cache/**",
+    "**/node_modules/**",
+    "**/docs/**"
+  ],
+  "ignoreWords": [],
+  "enableFiletypes": [
+    "javascript",
+    "typescript",
+    "json",
+    "markdown",
+    "html",
+    "svelte"
+  ],
+  "useGitignore": true
+}

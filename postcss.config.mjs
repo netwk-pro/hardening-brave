@@ -1,11 +1,13 @@
-// markdownlint.jsonc
 /* ==========================================================================
+postcss.config.mjs
+
+Copyright © 2025 Network Pro Strategies (Network Pro™)
 SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later
 This file is part of Network Pro.
 ========================================================================== */
 
-{
-    "MD041": false, // First line in file should be a top level header
-    "MD033": false, // Inline HTML
-    "MD013": false // Line length
-}
+export default {
+  plugins: {
+    autoprefixer: {}, // Enables autoprefixer and uses Browserslist configuration
+  },
+};
