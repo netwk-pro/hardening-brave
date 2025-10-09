@@ -1,0 +1,57 @@
+site_name: Hardening Brave Browser — Network Pro™
+site_url: https://brave.netwk.pro
+repo_url: https://github.com/netwk-pro/hardening-brave/
+repo_name: GitHub
+docs_dir: src
+site_dir: build/
+
+theme:
+  name: material
+  language: en
+  font:
+    text: null
+    code: null
+  logo: img/icon-512x512.png
+  favicon: img/favicon.svg
+  palette:
+    # Palette toggle for automatic mode
+    # Default to dark mode
+    - scheme: slate
+      primary: deep orange
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    # Optional light mode
+    - scheme: default
+      primary: deep orange
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.indexes
+    - toc.follow
+    - navigation.top
+    - search.suggest
+
+plugins:
+  - privacy:
+      assets: true
+      assets_fetch: true
+
+extra:
+  base_url: /
+
+copyright: >
+  Copyright &copy; 2025 Network Pro Strategies (Network Pro&trade;) – This blog
+  does not use cookies. See our <a href="https://netwk.pro/privacy">Privacy
+  Policy</a> for details.
+
+nav:
+  - Hardening Brave: index.md
+  - Website: https://netwk.pro
+  - Blog: https://blog.netwk.pro

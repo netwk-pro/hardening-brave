@@ -1,8 +1,10 @@
+# =========================================================================
 # SPDX-License-Identifier: CC-BY-4.0 OR GPL-3.0-or-later
 # This file is part of Network Pro.
 #
 # Created by https://www.toptal.com/developers/gitignore/api/node,visualstudiocode,dreamweaver
 # Edit at https://www.toptal.com/developers/gitignore?templates=node,visualstudiocode,dreamweaver
+# =========================================================================
 
 
 ### Custom Ignores ###
@@ -10,6 +12,7 @@
 .orig/
 .webpack_cache/
 python-venv/
+site/
 crypto.mjs
 server.mjs
 tests.mjs
@@ -162,6 +165,7 @@ out
 !.vscode/launch.json
 !.vscode/extensions.json
 !.vscode/*.code-snippets
+!.vscode/customData.json
 
 # Local History for Visual Studio Code
 .history/
