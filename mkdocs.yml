@@ -42,10 +42,6 @@ plugins:
   - privacy:
       assets: true
       assets_fetch: true
-      links: true
-      links_attr_map:
-        target: _blank
-        rel: noopener noreferrer
 
 extra:
   base_url: /
