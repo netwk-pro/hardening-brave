@@ -16,7 +16,8 @@
     "Startpage",
     "stylelintignore",
     "Tobi",
-    "venv"
+    "venv",
+    "vite"
   ],
   "ignorePaths": [
     ".gitignore",

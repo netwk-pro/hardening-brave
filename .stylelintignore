@@ -32,3 +32,6 @@ coverage
 # Configuration files
 package.json
 package-lock.json
+
+# Python
+python-venv

@@ -30,7 +30,7 @@
     "lint": "eslint --ext .mjs,.js,.cjs,.json,.jsonc --config eslint.config.mjs .",
     "lint:fix": "eslint . --ext .mjs,.js,.json,.jsonc --fix",
     "lint:md": "npx markdownlint-cli2 \"**/*.{md,markdown}\" \"#node_modules/**\" \"#build/**\" \"#python-venv/**\"",
-    "lint:css": "npx stylelint \"**/*.css\" --ignore-path .stylelintignore",
+    "lint:css": "npx stylelint \"**/*.css\" --ignore-path .stylelintignore --allow-empty-input",
     "format": "npx prettier . --check",
     "format:fix": "npx prettier . --write",
     "lint:all": "npm run lint && npm run lint:md && npm run lint:css && npm run format",
