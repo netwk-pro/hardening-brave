@@ -159,14 +159,12 @@ Forked from
 
 ---
 
-<div style="font-size: 12px; font-weight: bold; text-align: center;">
+<span style="font-size: 12px; font-weight: bold; text-align: center;">
 
-[Home](https://netwk.pro) &nbsp; | &nbsp;
-[Terms of Use](https://netwk.pro/terms-of-use)  
-[Privacy Policy](https://netwk.pro/privacy-policy) &nbsp; | &nbsp;
-[Legal](https://netwk.pro/license)
+[Home](https://netwk.pro) | [Terms of Use](https://netwk.pro/terms-of-use)  
+[Privacy Policy](https://netwk.pro/privacy-policy) | [Legal](https://netwk.pro/license)
 
-</div>
+</span>
 
 &nbsp;
 
