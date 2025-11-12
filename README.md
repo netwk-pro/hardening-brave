@@ -229,7 +229,7 @@ Forked from
 
 [Home](https://netwk.pro) &nbsp; | &nbsp;
 [Terms of Use](https://netwk.pro/terms-of-use)  
-[Privacy Policy](https://netwk.pro/privacy-policy) &nbsp; | &nbsp;
+[Privacy Policy](https://netwk.pro/privacy) &nbsp; | &nbsp;
 [Legal](https://netwk.pro/legal)
 
 </div>
