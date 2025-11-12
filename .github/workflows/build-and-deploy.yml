@@ -38,16 +38,16 @@ jobs:
           fetch-depth: 0
 
       - name: Set up Node.js
-        uses: actions/setup-node@v5
+        uses: actions/setup-node@v6
         with:
-          node-version: 22
+          node-version: 24
           cache: npm
           cache-dependency-path: package-lock.json
 
       - name: Upgrade npm
         run: |
           corepack enable
-          npm install -g npm@11.6.1
+          npm install -g npm@11.6.2
 
       - name: Set up Pages
         uses: actions/configure-pages@v5
@@ -59,7 +59,8 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
-          python-version: '3.13'
+          python-version-file: '.python-version'
+          cache: 'pip'
 
       - name: Install Python dependencies
         run: pip install -r requirements.txt
