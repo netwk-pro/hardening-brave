@@ -299,7 +299,7 @@ current effective date is listed at the top of this document.
 
 The Company may be contacted via our [Contact Form](https://netwk.pro/contact)
 or by email at:  
-📧 `support (at) neteng.pro`
+📧 `support (at) netwk.pro`
 
 <sub>[Back to top](#top)</sub>
 
