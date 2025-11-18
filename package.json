@@ -1,6 +1,6 @@
 {
   "name": "hardening-brave",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Changes to Brave's settings that will make Brave more privacy friendly.",
   "keywords": [
     "networking",
