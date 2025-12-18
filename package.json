@@ -1,6 +1,6 @@
 {
   "name": "hardening-brave",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Changes to Brave's settings that will make Brave more privacy friendly.",
   "keywords": [
     "networking",
@@ -40,24 +40,30 @@
     "lint:all": "npm-run-all --parallel lint lint:md lint:css --sequential format",
     "checkout": "npm run lint:all",
     "verify": "npm run checkout",
-    "check:updates": "npx npm-check-updates",
-    "upgrade": "npx npm-check-updates -u"
+    "upgrade": "ncu -u --format group --color",
+    "check:updates": "ncu --format group --color",
+    "prepare": "npx simple-git-hooks || echo ''"
   },
   "devDependencies": {
-    "@eslint/js": "^9.39.1",
-    "autoprefixer": "^10.4.22",
-    "browserslist": "^4.28.0",
-    "eslint": "^9.39.1",
+    "@eslint/js": "^9.39.2",
+    "autoprefixer": "^10.4.23",
+    "browserslist": "^4.28.1",
+    "eslint": "^9.39.2",
     "eslint-config-prettier": "^10.1.8",
     "globals": "^16.5.0",
-    "markdownlint": "^0.39.0",
-    "markdownlint-cli2": "^0.19.0",
+    "markdownlint": "^0.40.0",
+    "markdownlint-cli2": "^0.20.0",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.5.6",
-    "prettier": "^3.6.2",
-    "stylelint": "^16.25.0",
+    "prettier": "^3.7.4",
+    "simple-git-hooks": "^2.13.1",
+    "stylelint": "^16.26.1",
     "stylelint-config-html": "^1.1.0",
     "stylelint-config-recommended": "^17.0.0",
     "stylelint-order": "^7.0.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "if [ \"$CI\" = \"true\" ]; then exit 0; else npm run lint:all; fi",
+    "pre-push": "if [ \"$CI\" = \"true\" ]; then exit 0; else npm run checkout; fi"
   }
 }
