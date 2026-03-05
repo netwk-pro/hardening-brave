@@ -83,5 +83,6 @@ version increments reflecting both user-visible and operational impact.
 
 <!-- Link references -->
 
-[Unreleased]: https://github.com/netwk-pro/privacy-apps/compare/v1.1.0...HEAD
+[Unreleased]: https://github.com/netwk-pro/privacy-apps/compare/v1.1.1...HEAD
+[1.1.1]: https://github.com/netwk-pro/privacy-apps/releases/tag/v1.1.1
 [1.1.0]: https://github.com/netwk-pro/privacy-apps/releases/tag/v1.1.0
