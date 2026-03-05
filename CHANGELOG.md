@@ -22,6 +22,27 @@ version increments reflecting both user-visible and operational impact.
 
 ---
 
+## [1.1.1] - 2026-03-04
+
+### Changed
+
+- Bumped project version to `v1.1.1`.
+- Updated front-end tooling dependencies:
+  - `autoprefixer` `^10.4.23` → `^10.4.27`
+  - `postcss` `^8.5.6` → `^8.5.8`
+  - `stylelint-order` `^7.0.0` → `^7.0.1`
+  - `prettier` `^3.7.4` → `^3.8.1`
+  - `@eslint/js` `^9.39.2` → `^10.0.1`
+  - `eslint` `^9.39.2` → `^10.0.2`
+  - `globals` `^16.5.0` → `^17.4.0`
+  - `stylelint` `^16.26.1` → `^17.4.0`
+  - `stylelint-config-recommended` `^17.0.0` → `^18.0.0`
+  - `markdownlint-cli2` `^0.20.0` → `^0.21.0`
+- Updated Python dependencies:
+  - `material-mkdocs` `9.7.0` → `9.7.4`
+
+---
+
 ## [1.1.0] – 2025-12-17
 
 ### Added
@@ -62,5 +83,6 @@ version increments reflecting both user-visible and operational impact.
 
 <!-- Link references -->
 
-[Unreleased]: https://github.com/netwk-pro/privacy-apps/compare/v1.1.0...HEAD
+[Unreleased]: https://github.com/netwk-pro/privacy-apps/compare/v1.1.1...HEAD
+[1.1.1]: https://github.com/netwk-pro/privacy-apps/releases/tag/v1.1.1
 [1.1.0]: https://github.com/netwk-pro/privacy-apps/releases/tag/v1.1.0
